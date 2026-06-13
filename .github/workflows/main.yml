@@ -9,5 +9,8 @@ jobs:
     steps:
     - name: First-Step
       run: echo "This is my first GitHub action." 
-
+    - name: LoadRepo
+      uses: actions/checkout@v6.0.3
+    - name: listRepoFiles
+      run: ls -la
   
